@@ -39,11 +39,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295330AC2BE634D80013C666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2969D0712BE4B20A003A386F = {
 			isa = PBXGroup;
 			children = (
 				2969D07C2BE4B20A003A386F /* TestApp123 */,
 				2969D07B2BE4B20A003A386F /* Products */,
+				295330AC2BE634D80013C666 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +127,7 @@
 			packageReferences = (
 				2953309D2BE61E980013C666 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				295330A62BE626370013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				295330A92BE6344A0013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
 			);
 			productRefGroup = 2969D07B2BE4B20A003A386F /* Products */;
 			projectDirPath = "";
@@ -385,6 +394,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
+			};
+		};
+		295330A92BE6344A0013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

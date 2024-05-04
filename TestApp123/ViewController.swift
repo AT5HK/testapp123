@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
         let sdkVersion = getSDKName()
         print("iOS Version: \(iOSVersion)")
         print("iOS SDK Version: \(sdkVersion)")
+        
+        let request = GADRequest()
         
     }
     
