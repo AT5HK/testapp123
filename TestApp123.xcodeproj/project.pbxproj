@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294D3B1F2BE6E5AB000D79BC /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 294D3B1E2BE6E5AB000D79BC /* GoogleMobileAds */; };
 		2953309F2BE61E980013C666 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2953309E2BE61E980013C666 /* Alamofire */; };
-		295330B02BE636660013C666 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 295330AF2BE636660013C666 /* GoogleMobileAds */; };
 		2969D07E2BE4B20A003A386F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969D07D2BE4B20A003A386F /* AppDelegate.swift */; };
 		2969D0802BE4B20A003A386F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969D07F2BE4B20A003A386F /* SceneDelegate.swift */; };
 		2969D0822BE4B20A003A386F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2969D0812BE4B20A003A386F /* ViewController.swift */; };
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295330B02BE636660013C666 /* GoogleMobileAds in Frameworks */,
+				294D3B1F2BE6E5AB000D79BC /* GoogleMobileAds in Frameworks */,
 				2953309F2BE61E980013C666 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +97,7 @@
 			name = TestApp123;
 			packageProductDependencies = (
 				2953309E2BE61E980013C666 /* Alamofire */,
-				295330AF2BE636660013C666 /* GoogleMobileAds */,
+				294D3B1E2BE6E5AB000D79BC /* GoogleMobileAds */,
 			);
 			productName = TestApp123;
 			productReference = 2969D07A2BE4B20A003A386F /* TestApp123.app */;
@@ -129,8 +129,7 @@
 			mainGroup = 2969D0712BE4B20A003A386F;
 			packageReferences = (
 				2953309D2BE61E980013C666 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				295330A62BE626370013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-				295330A92BE6344A0013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */,
+				294D3B1D2BE6E5AB000D79BC /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 2969D07B2BE4B20A003A386F /* Products */;
 			projectDirPath = "";
@@ -383,6 +382,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		294D3B1D2BE6E5AB000D79BC /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.4.0;
+			};
+		};
 		2953309D2BE61E980013C666 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -391,34 +398,18 @@
 				kind = branch;
 			};
 		};
-		295330A62BE626370013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		295330A92BE6344A0013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git";
-			requirement = {
-				kind = exactVersion;
-				version = 2.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		294D3B1E2BE6E5AB000D79BC /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 294D3B1D2BE6E5AB000D79BC /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		2953309E2BE61E980013C666 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2953309D2BE61E980013C666 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		295330AF2BE636660013C666 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 295330A62BE626370013C666 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
